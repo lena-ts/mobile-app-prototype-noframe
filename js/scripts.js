@@ -11,5 +11,8 @@ $(document).ready(function(){
 	$('.user__add-product__close').click(function(){
 		$(this).parent().removeClass('visible');
 	});
-	
+
+	$('.product-title__like').click(function(){
+		$(this).toggleClass('active');
+	});	
 });

@@ -509,6 +509,20 @@ background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYA
 //****** Product Page *****//
 .product-page {
 	padding-bottom: 125px;
+	
+	.swiper-pagination-bullet-active {
+		background: $color-yellow !important;
+	}	
+	.swiper-pagination {
+		width: 100%;
+		margin-top:-13px;
+		left: 0;
+	}
+	.swiper-pagination-clickable {
+		.swiper-pagination-bullet {
+			margin: 0 4px;
+		}	
+	}	
 }
 .header {
 	line-height: 40px;

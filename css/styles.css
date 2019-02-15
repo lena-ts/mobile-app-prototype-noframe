@@ -363,6 +363,14 @@ h3 {
 
 .product-page {
   padding-bottom: 125px; }
+  .product-page .swiper-pagination-bullet-active {
+    background: #fed95a !important; }
+  .product-page .swiper-pagination {
+    width: 100%;
+    margin-top: -13px;
+    left: 0; }
+  .product-page .swiper-pagination-clickable .swiper-pagination-bullet {
+    margin: 0 4px; }
 
 .header {
   line-height: 40px;
