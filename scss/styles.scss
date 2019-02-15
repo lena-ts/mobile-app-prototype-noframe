@@ -523,6 +523,17 @@ background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYA
 			margin: 0 4px;
 		}	
 	}	
+	
+	.header {
+	    position: fixed;
+	    width: 100%;
+	    background: white;
+	    z-index: 2;		
+	}
+	
+	#product {
+		padding-top: 40px;
+	}
 }
 .header {
 	line-height: 40px;
