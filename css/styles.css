@@ -34,7 +34,10 @@ h3 {
   .btn.btn-yellow {
     background: #fed95a;
     border-color: #fed95a;
-    line-height: 24px; }
+    line-height: 24px;
+    -webkit-border-radius: 35px;
+    -ms-border-radius: 35px;
+    border-radius: 35px; }
   .btn.btn-edit {
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.125); }
@@ -66,13 +69,48 @@ h3 {
     justify-content: space-between; }
     .navbar .navbar-nav .nav-item {
       width: 25%;
-      text-align: center;
-      border-right: 1px solid rgba(0, 0, 0, 0.125); }
+      text-align: center; }
       .navbar .navbar-nav .nav-item.active > a, .navbar .navbar-nav .nav-item:hover > a {
-        color: black;
-        background: #fed95a; }
+        /*
+					color: black;
+					background: $color-yellow;
+*/
+        /*
+					&:after {
+						content: " ";
+						position: absolute;
+						top: 10px;
+						left: 50%;
+						margin-left: -15px;
+						display: block;
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 20px 0 20px 30px;
+						border-color: transparent transparent transparent $color-yellow;	
+						z-index: 0;			
+					}	
+*/ }
+        .navbar .navbar-nav .nav-item.active > a svg, .navbar .navbar-nav .nav-item:hover > a svg {
+          fill: black; }
       .navbar .navbar-nav .nav-item > a {
-        line-height: 40px; }
+        position: relative;
+        line-height: 40px;
+        -webkit-transition: 0.2s;
+        -ms-transition: 0.2s;
+        transition: 0.2s;
+        /*
+				height: 50px;
+				display: block;
+*/ }
+        .navbar .navbar-nav .nav-item > a svg {
+          /*
+					position: absolute;
+					top:10px;
+					left: 40px;
+*/
+          z-index: 3;
+          fill: gray; }
 
 .header-search {
   padding-top: 15px;
@@ -116,7 +154,9 @@ h3 {
     .index-block-items__title h4 {
       display: inline-block;
       float: left;
-      font-weight: 500; }
+      font-weight: 400; }
+  .index-block-items__action {
+    text-align: center; }
 
 .filters {
   display: inline-block;
@@ -157,12 +197,12 @@ h3 {
   margin-bottom: 15px; }
   .main-filters__item {
     display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 5px;
     padding: 5px 10px;
     font-size: 14px;
     margin-right: 3px;
-    cursor: pointer; }
+    cursor: pointer;
+    background: #f1f1f1; }
     .main-filters__item:hover, .main-filters__item.active {
       background: #fed95a;
       border-color: #fed95a; }
@@ -209,11 +249,11 @@ h3 {
       position: relative;
       width: calc(100% - 90px); }
     .rent-items-list .rent-item__name {
-      font-size: 18px;
+      font-size: 15px;
       display: inline-block;
       line-height: 20px;
       width: 70%;
-      font-weight: 500; }
+      font-weight: 400; }
     .rent-items-list .rent-item__text {
       font-size: 13px;
       line-height: 16px;
@@ -230,8 +270,19 @@ h3 {
         margin-left: 1px; }
 
 #rental-form .btn {
-  display: block;
-  font-size: 16px; }
+  display: inline-block;
+  font-size: 16px;
+  background: #fed95a;
+  color: black;
+  border-color: #fed95a;
+  -webkit-border-radius: 35px;
+  -ms-border-radius: 35px;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  padding-left: 30px;
+  padding-right: 30px; }
 
 #rental-form h4 {
   font-size: 1.1rem; }
@@ -258,13 +309,17 @@ h3 {
     #rental-form .rent__subject-item span {
       display: inline-block;
       width: 100%;
-      font-size: 13px;
+      font-size: 12px;
       line-height: 15px;
-      font-weight: 500;
+      font-weight: 400;
       min-height: 50px;
-      margin-top: 13px; }
+      margin-top: 13px;
+      color: gray;
+      color: #585858; }
     #rental-form .rent__subject-item.active, #rental-form .rent__subject-item:hover {
       background: #fed95a; }
+      #rental-form .rent__subject-item.active span, #rental-form .rent__subject-item:hover span {
+        color: black; }
 
 #rental-form #collapseBrand {
   width: 100%; }
@@ -289,6 +344,7 @@ h3 {
   margin-bottom: 15px;
   cursor: pointer;
   background: #f4f7f8;
+  background: #f1f1f1;
   line-height: 2.8rem;
   padding: 0 15px; }
 
@@ -455,7 +511,12 @@ h3 {
     font-size: 16px;
     float: right;
     display: inline-block;
-    border-color: black !important; }
+    border-color: #fed95a !important;
+    background: #fed95a;
+    color: black;
+    -webkit-border-radius: 35px;
+    -ms-border-radius: 35px;
+    border-radius: 35px; }
   .product__action-price {
     display: inline-block;
     float: left;
@@ -522,7 +583,7 @@ h3 {
   .product__contact-phone {
     display: inline-block;
     float: right;
-    background: black;
+    background: #fed95a;
     border-radius: 5px;
     width: 39px;
     height: 39px;
@@ -530,6 +591,8 @@ h3 {
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
     cursor: pointer; }
+    .product__contact-phone svg {
+      fill: black; }
 
 #product-confirm {
   position: fixed;
@@ -591,7 +654,12 @@ h3 {
     .product-confirm__action .btn {
       font-size: 16px;
       width: 100%;
-      border-color: black !important; }
+      background: #fed95a;
+      border-color: #fed95a !important;
+      color: black;
+      -webkit-border-radius: 35px;
+      -ms-border-radius: 35px;
+      border-radius: 35px; }
 
 #wishlist {
   margin-top: 40px; }
