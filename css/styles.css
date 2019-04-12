@@ -514,7 +514,7 @@ h3 {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   padding: 10px 15px; }
   .product__action .btn {
-    font-size: 16px;
+    font-size: 14px;
     float: right;
     display: inline-block;
     border-color: #fed95a !important;
@@ -522,7 +522,11 @@ h3 {
     color: black;
     -webkit-border-radius: 35px;
     -ms-border-radius: 35px;
-    border-radius: 35px; }
+    border-radius: 35px;
+    padding: 8px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12); }
   .product__action-price {
     display: inline-block;
     float: left;
@@ -658,14 +662,18 @@ h3 {
     padding: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.125); }
     .product-confirm__action .btn {
-      font-size: 16px;
+      font-size: 14px;
       width: 100%;
       background: #fed95a;
       border-color: #fed95a !important;
       color: black;
       -webkit-border-radius: 35px;
       -ms-border-radius: 35px;
-      border-radius: 35px; }
+      border-radius: 35px;
+      padding: 8px 30px;
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+      -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.12); }
 
 #wishlist {
   margin-top: 40px; }

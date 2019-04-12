@@ -715,13 +715,15 @@ background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3
 	padding: 10px 15px;
 	
 	.btn {
-		font-size: 16px;
+		font-size: 14px;
 		float: right;
 		display: inline-block;
 		border-color: $color-yellow !important;
 		background: $color-yellow;
 		color: black;
 		@include border-radius(35px);
+		padding: 8px 30px;
+		@include box-shadow(0 0 10px rgba(0, 0, 0, 0.12));
 	}
 	
 	&-price {
@@ -908,12 +910,14 @@ background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3
 		padding: 15px;
 		border-top: $border-color;
 		.btn {
-			font-size: 16px;
+			font-size: 14px;
 			width: 100%;
 			background: $color-yellow;
 			border-color: $color-yellow !important;
 			color: black;
 			@include border-radius(35px);
+			padding: 8px 30px;
+			@include box-shadow(0 0 10px rgba(0, 0, 0, 0.12));
 		}
 	}
 }
