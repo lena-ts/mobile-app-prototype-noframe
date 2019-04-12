@@ -268,8 +268,13 @@ background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYA
 	}
 	
 	.filter-action{
+		text-align: center;
 		.btn {
-			width: 100%;
+			display: inline-block;
+			margin: auto;
+			padding: 7px 30px;
+			font-size: 14px;
+// 			width: 100%;
 		}
 	}
 }
@@ -282,8 +287,8 @@ background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYA
 	&__item {
 		display: inline-block;
 // 		border: $border-color;
-		border-radius: 5px;
-		padding: 5px 10px;
+		border-radius: 35px;
+		padding: 5px 15px;
 		font-size: 14px;
 		margin-right: 3px;
 		cursor: pointer;
@@ -382,7 +387,7 @@ background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYA
 	.btn {
 		display: inline-block;
 		font-size: 14px;
-		font-weight: 500;
+// 		font-weight: 500;
 		background: $color-yellow;
 		color: black;
 		border-color: $color-yellow;

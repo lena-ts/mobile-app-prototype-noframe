@@ -188,8 +188,13 @@ h3 {
   z-index: 2; }
   .filters-overlay.visible {
     display: block; }
-  .filters-overlay .filter-action .btn {
-    width: 100%; }
+  .filters-overlay .filter-action {
+    text-align: center; }
+    .filters-overlay .filter-action .btn {
+      display: inline-block;
+      margin: auto;
+      padding: 7px 30px;
+      font-size: 14px; }
 
 .main-filters {
   display: block;
@@ -197,8 +202,8 @@ h3 {
   margin-bottom: 15px; }
   .main-filters__item {
     display: inline-block;
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 35px;
+    padding: 5px 15px;
     font-size: 14px;
     margin-right: 3px;
     cursor: pointer;
@@ -272,7 +277,6 @@ h3 {
 #rental-form .btn {
   display: inline-block;
   font-size: 14px;
-  font-weight: 500;
   background: #fed95a;
   color: black;
   border-color: #fed95a;
