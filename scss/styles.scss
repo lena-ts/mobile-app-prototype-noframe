@@ -381,7 +381,8 @@ background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYA
 #rental-form {
 	.btn {
 		display: inline-block;
-		font-size: 16px;
+		font-size: 14px;
+		font-weight: 500;
 		background: $color-yellow;
 		color: black;
 		border-color: $color-yellow;
@@ -389,6 +390,7 @@ background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYA
 		@include box-shadow(0 0 10px rgba(0, 0, 0, 0.12));
 		padding-left: 30px;
 		padding-right: 30px;
+		padding: 10px 30px;
 	}
 	
 	h4 {

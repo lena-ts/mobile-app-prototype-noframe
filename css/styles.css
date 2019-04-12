@@ -271,7 +271,8 @@ h3 {
 
 #rental-form .btn {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 500;
   background: #fed95a;
   color: black;
   border-color: #fed95a;
@@ -282,7 +283,8 @@ h3 {
   -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  padding: 10px 30px; }
 
 #rental-form h4 {
   font-size: 1.1rem; }
